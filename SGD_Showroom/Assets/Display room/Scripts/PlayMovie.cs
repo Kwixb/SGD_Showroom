@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayMovie : MonoBehaviour
 {
 
-    void Update ()
+    void FixedUpdate ()
     {
 		if(Input.GetKeyUp(KeyCode.Space))
         {
