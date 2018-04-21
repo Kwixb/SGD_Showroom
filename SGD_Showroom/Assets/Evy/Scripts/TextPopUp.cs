@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class TextPopUp : MonoBehaviour
 {
+    [Header("Student Information (Panel)")]
     public GameObject informationPopUp;
+
 
     private void Start()
     {
@@ -22,7 +24,7 @@ public class TextPopUp : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player" )
+        if(other.tag == "Player")
         {
                 informationPopUp.SetActive(true);
         }
