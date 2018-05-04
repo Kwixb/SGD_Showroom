@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ExitGame : MonoBehaviour
 {
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
-            if (Input.GetKey("Escape"))
+            if (Input.GetKeyUp(KeyCode.Escape))
             {
                 Application.Quit();
             }
@@ -22,5 +22,17 @@ public class ExitGame : MonoBehaviour
 
         }
     }
+
+    //void Update()
+    //{
+    //    if (Input.GetKeyUp(KeyCode.Escape))
+    //    {
+    //        Application.Quit();
+    //    }
+    //    else
+    //    {
+
+    //    }
+    //}
 }
 
